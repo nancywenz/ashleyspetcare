@@ -21,4 +21,3 @@ $("#submit").click(function() {
 function submit() {
   alert("Ashley will contact you soon!");
 }
-
