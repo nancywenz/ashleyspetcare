@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //pic generator
 var images = [
   
@@ -22,9 +21,4 @@ $("#submit").click(function() {
 function submit() {
   alert("Ashley will contact you soon!");
 }
-=======
 
-$('.carousel').carousel({
-    interval: 2000
-  })
->>>>>>> 00cbadc5ec0eac12a38a528de22f3aaa5161ef4c
