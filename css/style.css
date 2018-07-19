@@ -1,41 +1,137 @@
-/*Base Element Styles*/
-
 * {
 	box-sizing: border-box;
 }
 
 body {
-	font-family: 'Varela Round', sans-serif;
-	line-height: 1.6;
-	color: #3a3a3a;
+    background-color: #E6F4F1;
+    font-family: Trebuchet MS;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    min-width: 256px;
+    padding-top: 8px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
-p {
-	font-size: .95em;
-	margin-bottom: 1.8em;
+/* header */
+.header-container {
+font-size: 16px;
+font-weight: bold;
+margin-top: 0px;
 }
 
-h2,
-h3,
-a {
-	color: teal;
+header p {
+  font-size: 20px;
+  text-align: left;
+  font-family: Trebuchet MS;
+
+}
+header h1 {
+font-size: 16px;
+text-align: right;
 }
 
-h2,
-h3,
-h4 {
-	margin-top: 0;
+nav ul {
+    list-style-type: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 16px;
+    text-align: right;
 }
 
-h4 {
-    margin-bottom: .5em;
+nav ul li {
+    display: inline;
+    border-right: 2px solid #0051B6;
+    padding-right: 8px;
+    padding-left: 8px;
+    }
+    nav ul li:last-child {
+    border-right: none;
+    }
+    nav ul li a {
+    text-decoration: none;
+    color: #111111;
+    }
+
+.banner {
+  border-bottom: #0051B6;
+
 }
 
-a {
-	text-decoration: none;
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
 }
 
-img {
-	max-width: 100%;
+
+.tagline {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-right: 8px;
+  padding-left: 8px;
+
 }
 
+section {
+    background-color: #EEE8A9;
+    border: 2px solid #0051B6;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    min-height: 320px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 5px;
+    }
+
+ 
+
+.generator {
+  border: 5px dotted #0051B6;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  min-height: 320px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 5px;
+  
+}
+
+
+/*footer*/
+.footer-container{
+  color: #E6F4F1;
+  text-align: center;
+	padding: 1em 0;
+	background: #0051B6;
+
+}
+
+/*responsive images and media queries*/    
+img.small {
+  height: 200px;
+  margin-bottom: 24px;
+  margin-right: 24px;
+  }
+  img.medium {
+  max-width: 360px;
+  width: 50%;
+  }
+  img.large {
+  width: 75%;
+  }
+
+
+  @media only screen and (min-width: 480px) {
+    nav .header-container .wrapper a {
+      width: 100%;
+      }
+    
+  
+  @media only screen and (min-width: 768px),
+         only screen and (min-width: 700px) and (orientation: landscape) {
+      nav ul li{
+      width: 100%;
+    }
+ 
