@@ -1,41 +1,151 @@
-/*Base Element Styles*/
+/* set sizing to border box method */
+html {
+  box-sizing: border-box;
+  }
+  *, *:before, *:after {
+  box-sizing: inherit;
+  }
+  /* set maximum and minimum widths for the body and center within the viewport */
+  body {
+  background-color: #E6F4F1;
+  font-family: 'Trebuchet MS';
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+  min-width: 256px;
+  padding-top: 8px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+   }
+  
+  /* header */
+   header{
+   background-color: #E6F4F1
+  }
+  
+ 
+  header h1 {
+  font-size: 16px;
+  text-align: right;
+  }
 
-* {
-	box-sizing: border-box;
-}
+  /* navigation */
+  .nav ul {
+  list-style-type: none;
+  font-family: 'Trebuchet MS';
+  font-weight: bold;
+  padding: 16px;
+  text-align: right;
+  }
 
-body {
-	font-family: 'Varela Round', sans-serif;
-	line-height: 1.6;
-	color: #3a3a3a;
-}
+  .nav ul li {
+  display: inline;
+  border-right: 2px solid #0051b6;
+  padding-right: 8px;
+  padding-left: 8px;
+  
+  }
+  .nav ul li:last-child {
+  border-right: none;
+  }
+  .nav ul li a {
+  text-decoration: none;
+  color: #111111;
+  }
+ 
+  .nav ul li a:hover {
+  text-decoration: underline;
+  }
 
-p {
-	font-size: .95em;
-	margin-bottom: 1.8em;
-}
+  .tagline {
+    font-family:'comic sans ms';
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    min-height: 35px;
+  }
 
-h2,
-h3,
-a {
-	color: teal;
-}
+  /* Services */
 
-h2,
-h3,
-h4 {
-	margin-top: 0;
-}
+  article h1{
+  font-size: 24px;
+  text-align: center;
+  background-color: #5cacf3;
+  min-height: 20px;
 
-h4 {
-    margin-bottom: .5em;
-}
+  }
 
-a {
-	text-decoration: none;
-}
+  section {
+  background-color: #eee8a9;
+  margin-bottom: 24px;
+  min-height: 320px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 2px;
+  }
 
-img {
-	max-width: 100%;
-}
+  section h3 p {
+   text-align: center; 
 
+  }  
+  
+  /* the aside */
+  aside {
+    background-color: #E6F4F1;
+    margin-bottom: 24px;
+    min-height: 320px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 2px;
+    text-align: center;
+  }
+
+  /* footer */
+  footer {
+    background-color: #5cacf3;
+    flex-shrink: 0;
+    text-align: center;
+    font-weight: bold; 
+  }
+  
+  
+  /* small images are set to 200px in height */
+  img.small {
+  float: left;
+  height: 200px;
+  margin-bottom: 24px;
+  margin-right: 24px;
+  }
+  /* medium images can be 50% of the container element’s width, up to 360px */
+  img.medium {
+  max-width: 360px;
+  width: 50%;
+  }
+  /* large images are 100% of the container element’s width */
+  img.large {
+  width: 100%;
+  }
+  /* add the same style of border to the elements which are to have borders */
+  section, img, h1, footer {
+  border: 2px solid #E6F4F1;
+  border-radius: 16px;
+  }
+
+
+  /* Media queries*/
+  @media all and (min-width: 900px) {
+  article {
+  float: left;
+  width: 66%;
+  }
+  
+  aside {
+  float: right;
+  width: 34%;
+  }
+
+  footer {
+      clear: both;}
+  }
+ 

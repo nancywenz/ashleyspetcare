@@ -1,58 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pet Sitter in Louisville, KY | Ashley's Pet Care</title>
-        <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-
-    <body>
-        <header class="main-header">
-       
-        <h1>Ashley's Pet Care</h1>
-        <p>Going somewhere? Call Ashley's Pet Care!</p>
-
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About Ashley</li>
-                <li>Services</li>
-                <li>Products</li>
-                <li>Contact Me</li>
-            </ul>
-        </nav>    
-
-        </header>
-        
-        <div>
-            <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x150"></a>
-            <p>Pets are Family</p>
+  <head>
+    <title>Pet Sitter in Louisville, KY | Ashley's Pet Care</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      
+    <header>
+        <div class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
         </div>
 
-        <p>Your pet needs love and care while you are away. Ashley's Pet Care will be there and will keep you updated along the way! </p>
-       
-        
-        <section>
-            <h2>About Me</h2>
-            <p>I love pets and will take care of yours.  Meet Rora, my Brussels Griffon mix girl.</p>
-        </section>
-        
-        <section>
-            <h2>Services</h2>
-            <p>Pet Sitting, Dog Walking and Overnights</p>
-        </section>
-        
-        <section>
-            <h2>Contact</h2>
-            <p>Email us at ashleywenz@icloud.com</p>
-        </section>
-        
-        <footer>
-            <span>&copy;2018 Ashley Wenz.</span>
-        </footer>
+        <div>  
+            <span><img class="large" src="img/LogoMakr_5jZU6c.png" alt="Ashley's Pet Care Logo"/></span>
+            
+        </div> 
+    </header>
 
-        <script src="app.js"></script>
-    </body>
-</html> 
+    <article class="container">
+      <p class="tagline"><strong>Going Somewhere?  Call Ashley's Pet Care!</strong></p>
+      <h1>Services</h1>
+      
+      
+        <section>
+        <h2>Dog Walks</h2>
+        <p><img class="small" src="img/dogleash.jpg" alt="Dog with leash"/> </p>
+        <p>Daily dog walks are our specialty at 4 Pets’ Sake. Recommended for every dog, but a must for clients who work extra long hours, for older dogs who just can’t hold it like they used to, and active dogs with boundless energy. We will walk your dog individually for at least 20 minutes on leash in your neighborhood. We are also happy to play ball or Frisbee (in secure areas) with your dog, providing them with the exercise and attention that they enjoy most.  Extended playtime/walk time available for an additional fee. $22/visit* with monthly discounts available at 10% off</p>
+        </section>
 
+        <section>
+          <h2>Vacation Care</h2>
+          <p>
+            <img class="small" src="img/dogsleep.jpg" alt="Dog in bed"/>
+          </p>
+            <p>When you are on vacation, business travel or have emergency situations, leave your pet at home in the comfort of familiar surroundings. Your pet sitter will arrive at your home to feed, water, dispense medications, clean the litter box/cage, play with and pamper your pet. As a complimentary service, we also water indoor plants, bring in the mail, and rotate the lights/blinds to help deter burglary. $25/visit*</p>
+        </section>
+
+        <section>
+          <h2>In Home Boarding</h2>
+          <p>
+            <img class="small" src="img/rora2.png" alt="Rora in Blanket"/>
+            </p>
+              <p>Your dog will be in the safety of a 4 Pets' Sake staff home. All dogs enjoy access to a secure yard for playtime, lots of dog beds to lie on, toys to play with and plenty of belly rubs administered throughout the day. Requirements include: must be housebroken, get along well with other dogs and are spayed/neutered. This is a great alternative to multiple visits to your home a day and is the perfect boarding solution for social dogs. $50/day</p>
+        </section>
+
+        <section>
+          <h2>CatCation</h2>
+          <p>
+            <img class="small" src="img/catcation.jpg" alt="Cat"/>
+          </p>
+            <p>Our cat-only boarding facility with spacious cat condominiums, soft bedding, relaxing music and open space playtime. A home away from home environment where your cat will feel safe, relaxed and purrfectly pampered. $25/day; $19/day for each additional cat.</p>
+        </section>
+    </article>
+
+    <aside>
+        <section>
+          <h2>About Ashley</h2>
+          <h3>I love pets and will care for your animals just like family. </h3>
+          <p><img class="small" src="img/ashrora1.png" alt="Ashley and Rora at home"></p>
+            <p>I understand the love you have for the furry members of your family. I'll treat your babies like my own while you’re gone. You can rest easy knowing your pets are in qualified, dependable hands that are also very good at giving belly rubs.</p>
+        </section>
+
+        <section>
+            <div  class="generator" id="quoteDisplay">
+                <h3>What is my pet thinking today?</h3>
+                <p>Click the button below to get the Dog Quote of the Day!</p>
+                <button onclick="newQuote()">New Quote</button>
+              </div>
+        </section>
+
+        <section>
+          <h2>Contact Me</h2>
+          <p>Please contact me for more information or to schedule a service</p>
+          <p><strong>Email:</strong>  ashleywenz@icloud.com</p>      
+          <p><strong>Phone:</strong>  502-919-1388  </p>
+        </section>
+     </aside>
+
+    
+      <footer>
+          <span>&copy;2018 Ashley's Pet Care</span>
+          <p>Logo created on <a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a></p>
+      </footer>
+   
+    
+    <script src="js/app.js"></script>
+  </body>
+</html>
